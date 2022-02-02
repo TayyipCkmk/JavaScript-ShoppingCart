@@ -1,0 +1,65 @@
+.body {
+    background: #f2f2f2;
+   
+}
+.updateContainer {
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.updateContainer > div {
+    font-size: larger;
+    padding: 10px;
+    font-family: "Mouse Memoirs", sans-serif;
+}
+
+.updateContainer > div input {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.updateContainer > div input:focus {
+    border-color: orange;
+}
+
+
+.updateContainer > div > div {
+    margin-top: 20px;
+}
+
+.updateContainer button {
+    background: orange;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: larger;
+}
+
+.updateContainer button:hover {
+    opacity: 0.9;
+}
+
+.info {
+    padding: 10px;
+    font-family: "Mouse Memoirs", sans-serif;
+    text-align: center;
+    font-size: xxx-large;
+}

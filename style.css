@@ -1,0 +1,87 @@
+
+.body {
+    background: #f2f2f2;
+   
+}
+.container {
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+nav.auth {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+nav.auth > div {
+    flex: 1;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center; 
+    font-family: "Mouse Memoirs", sans-serif;  
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav.auth > div.selected {
+    border-bottom: 2px solid orange;
+}
+
+.container > div {
+    padding: 10px;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: 20px;
+}
+
+.container > div input {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all 0.3s;
+    
+}
+
+.container > div input:focus {
+    border-color: orange;
+}
+
+
+.container > div > div {
+    margin-top: 20px;
+}
+
+.container button {
+    background: orange;
+    width: 100%;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Mouse Memoirs", sans-serif;
+    color: white;
+}
+
+.container button:hover {
+    opacity: 0.9;
+}
+
+#login, #signup {
+    display: none;
+}
+
+#login.show, #signup.show {
+    display: block;
+}
+
+/* Shop Page   */

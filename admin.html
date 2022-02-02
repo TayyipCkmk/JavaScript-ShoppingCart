@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h1 class="shop">Admin</h1>
+            <ul>
+                <li><a id="myBtn">Add Product</a>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Product Info</h2>
+                          </div>
+                          <div class="modal-body">
+                            <div>
+                                <label for="">Product Name</label>
+                                <input type="text" id="productName"/>
+                            </div>
+                            <div>
+                                <label for="">Product Price</label>
+                                <input type="text" id="productPrice"/>
+                            </div>
+                            <div>
+                                <label for="">Product Img</label>
+                                <input onchange="encodeImage(this)" type="file" id="productImg"/>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                             
+                            <button id="modalHidden" onclick="addProduct()" class="modalButton" >OK</button> 
+                            <!-- <button onclick="addProduct()" class="modalButton">Add</button>   -->
+                            <!-- <a style="float: right; background-color: #c47f17" id="modalButton">OK</a> -->
+                          </div>
+                        </div>                      
+                    </div>
+                </li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="cont" class="container"></div>
+        <!-- <div id="imageId" class="image">
+            <img id="imgId" src="" height="250px" width="250px">
+            <h3 id="h3Id" class="crops"></h3>
+            <h3 id="h3" class="crops"><img src="/Users/tayyip/Downloads/gold.webp"></h3>
+            <button class="add-cart cart1" >Add Cart</button>
+            <input type="hidden" value="productPrice" />
+        </div> -->
+        <!-- <div class="image">
+            <img src="/Users/tayyip/Desktop/HTML/deneme/images/corn.jpg" height="250px" width="250px">
+            <h3 class="crops">Corn</h3>
+            <h3 class="crops">15 <img src="/Users/tayyip/Downloads/gold.webp"></h3>
+            <button class="add-cart cart1" >Add Cart</button>
+            <input type="hidden" value="15" />
+        </div> -->  
+  <script src="admin.js"></script>
+</body>
+</html>

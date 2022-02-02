@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h1 class="shop">PROFILE</h1>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                            <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z"></path>
+                          </svg>Cart<span id="span">0</span>
+                        </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<h1 class="info">You Can Update Your Informations</h1>
+<div class="updateContainer">
+  
+    <div id="update">
+        <!-- <div>
+            <label for="">Username</label>
+            <input type="text" id="updateUserid"/>
+        </div> -->
+        <div>
+            <label for="">Password</label>
+            <input type="text" id="updatePass"/>
+        </div>
+        <div>
+            <label for="">E-mail</label>
+            <input type="email" id="updateEmail"/>
+        </div>
+        <div>
+            <label for="">Address</label>
+            <input type="text" id="updateAddress"/>
+        </div>
+        <div>
+            <button class="pressUpdate"  >Update Informations</button>
+        </div>
+    </div>
+</div>
+    <script src="profile.js"></script>
+</body>

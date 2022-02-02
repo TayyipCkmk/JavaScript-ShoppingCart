@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+header {
+    background-image: url('/Users/tayyip/Desktop/HTML/ShoppingCart/images/st.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 150px;
+    position:relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10,10,10,0.3);
+    font-size: large;
+    font-family: "Mouse Memoirs", sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: large;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-block-start: 15px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #efc27f;
+    text-decoration: none;;
+    color: white;
+}
+
+.cart svg {
+   color: white;
+   height: 20px;
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 5px;
+}
+
+.cart a {
+    background-color: #efc27f;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: inherit;
+    padding-right: 10px;
+}
+
+.shop {
+    padding-bottom: 100px;
+    color: #ffff69;
+    font-size: 50px;
+    margin-block-start: auto;
+}
+
+
+/**/
+
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+.image {
+    
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.addcart {
+    position: absolute;
+    width: 100%;
+    background-color: #efc27f;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: 50px;
+}
+
+/* .image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+    bottom: 60px;
+    opacity: 0.9;
+    padding: 10px;
+    text-decoration: none;
+} */
+
+.addBtn {
+    cursor: pointer;
+    text-align: center;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: 30px;
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+    color: brown;
+    width: -webkit-fill-available;
+    margin-block-end: 10px;
+}
+
+.crops {
+    text-align: center;
+    margin-block-start: -1px;
+    margin-block-end: 4px;
+    font-size: 30px;
+    font-family: "Mouse Memoirs", sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #efc27f;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 26px;
+  background-color: #efc27f;
+  color: white;
+}
+
+.modalButton {
+    margin-inline-end: 10px;
+    margin-block-start: -22px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: #e2a851;
+    text-decoration: none;
+    color: white;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: larger;
+
+}
+
+.deleteShop {
+  margin-inline-start: 45%;
+  width: 25px;
+  cursor: pointer;
+}
+
+.deleteShop:hover {
+  border: 1px solid rgb(219, 53, 57);
+  border-radius: 5px;
+  
+}

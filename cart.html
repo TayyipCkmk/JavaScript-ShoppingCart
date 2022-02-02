@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        
+        
+
+        <div class="overlay"></div>
+        <nav>
+            <h1 class="shop">CART</h1>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                            <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z"></path>
+                          </svg>Cart<span id="span">0</span>
+                        </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-products" id="productList">
+
+        <div class="product">
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="price sm-hide">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="cartProduct" id="list" >
+
+            </div>
+        </div>
+        <button id="cartBuyButtonid" class="cartBuyButton">Buy</button>
+          <div id="buyModal" class="buyModalClass">
+              <div id="modalInfoId" class="modalInfo">
+                  <span class="span">&times;</span>
+                  <h1 class="h"  >Buy Page</h1>
+                  <table id="contactsTable" border="1" cellspacing="0" class="table">
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                  </table>
+                  <br>
+                  <span class="totalModal" id="total" >0</span>
+                  <img src="data:image/webp;base64,UklGRmABAABXRUJQVlA4TFMBAAAvEUAEEIfBNrJtJeeFuMUWklMgxbq7ZLw22EaS5KRfoVzlkgDERcAEtAwhSZKUQ7A/wLHc+TOcwRjssIltK85hEUCJD3oGN7jYIi1tjERGAIgQoUCEDBViHx9BQeEMJxQUBBUIuRcFN3ig4Nx3sp3GMn9YpERvCZ+LggjwkFJs//hHdkUMET4P4ypnyzfbs0vB8ln+UH6NlACHkW2ryT3I/y/OxyGGu6T/9pIiIvo/AUgIJCQQqI+OgwiEBOLQHg7tYQjQsbHBwwlA6Ph6R2mWpdH7vBdCat6J5SHkZrcSATp8zGbBzOxeApIO7zhJ8yKN41ulPoe3WWwht2QAdPh2NgthZt2vBCTVz8VmtViu1otHpT7lNXT/rvt34dID/K4M8xDmodx5QJLb7q6X6/Vy3W2dJIF3vqzKsiq9c4j+1DvvnHd+CiBJ4+nwZKQ+IBAIBAIA">
+                  <br>
+                  <button id="lastBuy" class="buybtn">Buy</button>
+                  <!-- <table id="productTable" border="1" cellspacing="0" style="text-align: center; width:100%">
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </table> -->
+              </div>
+          </div> 
+    </div>
+
+
+
+    <script src="cart.js"></script>
+</body>   
